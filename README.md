@@ -4,12 +4,10 @@
 This assignment involves developing a multi-role mobile application that connects **verified rice millers (sellers)** with **bulk buyers**, and integrates **lorry logistics** for order fulfillment. The app should demonstrate clear communication between the **seller**, **buyer**, and **logistics**.
 
 ## **Objective:**
-- **App UI skills** (for Flutter & Frontend roles)
 - **API development & integration** (for Full Stack roles)
 - **Clear communication between apps** (seller → buyer → logistics)
 
 ## **Tech Stack:**
-- **Frontend**: React.js / React Native
 - **Backend**: Node.js + Express.js
 - **Database**: PostgreSQL
 - **API testing**: Postman (API collection link shared below)
