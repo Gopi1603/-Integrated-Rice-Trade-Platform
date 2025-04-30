@@ -1,0 +1,2600 @@
+{
+	"info": {
+		"_postman_id": "5b28a759-1ae1-4dba-bad9-dadf8320cccb",
+		"name": "Rice Trade Platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35025804",
+		"_collection_link": "https://testers-4133.postman.co/workspace/testers-Workspace~4b12eb2d-da42-448c-b60b-8ed436373d40/collection/35025804-5b28a759-1ae1-4dba-bad9-dadf8320cccb?action=share&source=collection_link&creator=35025804"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Auth – Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n  \"name\": \"Gopi\",\r\n  \"phone\": \"6302511822\",\r\n  \"password\": \"gopi123\",\r\n  \"role\": \"seller\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"name\": \"Gopi\",\r\n  \"phone\": \"6302511822\",\r\n  \"password\": \"gopi123\",\r\n  \"role\": \"seller\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "289"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"121-YhQwBinpm+JBTlHAM/BFSAcOm8E\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:24:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk0MjgzLCJleHAiOjE3NDYwMDE0ODN9.4V1qMpJlta7HhQL6F9O2ylBvan1r8pIjdY2N5n1WSqo\",\n    \"userId\": \"376cb86d-0f88-4717-b648-2946d84d1244\",\n    \"role\": \"seller\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth – Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n  \"phone\": \"6302511822\",\r\n  \"password\": \"gopi123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Auth – Register Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"phone\": \"6302511822\",\r\n  \"password\": \"gopi123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "303"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12f-x1IzQJgcsEKbqIuF7jK+B9AxlZU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:51:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk1OTEwLCJleHAiOjE3NDYwMDMxMTB9.bv5T_CDr9A5JHi6DgGHDC0TNnQHAFrrQvpGY5WtzNmY\",\n    \"userId\": \"376cb86d-0f88-4717-b648-2946d84d1244\",\n    \"name\": \"Gopi\",\n    \"role\": \"seller\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth – Me",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Auth – Register Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/auth/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-glzdZMBoCBGxxaxgScUrbPeWoC0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 06:53:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": \"376cb86d-0f88-4717-b648-2946d84d1244\",\n    \"role\": \"seller\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Seller",
+			"item": [
+				{
+					"name": "Seller – Create Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2ODg1LCJleHAiOjE3NDYwMDQwODV9.WE9FTAjW0sTAJDhKArQ7OHkyUVditUuKKsrytUlwy58",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2MjMzLCJleHAiOjE3NDYwMDM0MzN9.tI9jdVQfEvkcSt6Z4HOoon7QyiVYCvXq5g8PEMAzb58",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"millName\": \"Mandepudi\",\r\n  \"city\": \"Khammam\",\r\n  \"lat\": 12.9796,\r\n  \"lng\": 77.5966\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sellers/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sellers",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2MjMzLCJleHAiOjE3NDYwMDM0MzN9.tI9jdVQfEvkcSt6Z4HOoon7QyiVYCvXq5g8PEMAzb58",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"millName\": \"Mandepudi\",\r\n  \"city\": \"Khammam\",\r\n  \"lat\": 12.9796,\r\n  \"lng\": 77.5966\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sellers/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sellers",
+										"profile"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33-phQ4z9DJTHCdi1rr1Cwf2tb2pfE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 07:08:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sellerId\": \"083f83b6-0087-4828-8ce1-10f3972b9837\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Seller – Get My Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2ODg1LCJleHAiOjE3NDYwMDQwODV9.WE9FTAjW0sTAJDhKArQ7OHkyUVditUuKKsrytUlwy58",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/sellers/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sellers",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/sellers/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sellers",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-1W3Osahya6FA+TdC99Z4j+x+5n0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 07:12:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sellerid\": \"083f83b6-0087-4828-8ce1-10f3972b9837\",\n    \"millname\": \"Mandepudi\",\n    \"city\": \"Khammam\",\n    \"lat\": 12.9796,\n    \"lng\": 77.5966\n}"
+						}
+					]
+				},
+				{
+					"name": "seller - Add a Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<canvas id=\"myChart\" height=\"75\"></canvas>\r",
+									"\r",
+									"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> \r",
+									"\r",
+									"<script>\r",
+									"    var ctx = document.getElementById(\"myChart\");\r",
+									"\r",
+									"    var myChart = new Chart(ctx, {\r",
+									"        type: \"bar\",\r",
+									"        data: {\r",
+									"            labels: [],\r",
+									"            datasets: [{\r",
+									"                data: [],\r",
+									"                \r",
+									"                // Change these colours to customize the chart\r",
+									"                backgroundColor: [\"#003f5c\", \"#58508d\", \"#bc5090\", \"#ff6361\", \"#ffa600\"],\r",
+									"            }]\r",
+									"        },\r",
+									"        options: {\r",
+									"            legend: { display: false },\r",
+									"            title: {\r",
+									"                display: true,\r",
+									"                text: 'Count'\r",
+									"            },\r",
+									"            scales: {\r",
+									"                xAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Items'\r",
+									"                    }\r",
+									"                }],\r",
+									"                yAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Count'\r",
+									"                    }\r",
+									"                }]\r",
+									"            }\r",
+									"        }\r",
+									"\r",
+									"    });\r",
+									"\r",
+									"    // Access the data passed to pm.visualizer.set() from the JavaScript\r",
+									"    // code of the Visualizer template\r",
+									"    pm.getData(function (err, value) {\r",
+									"        myChart.data.datasets[0].data = value.response.data;\r",
+									"        myChart.data.labels = value.response.labels;\r",
+									"        myChart.update();\r",
+									"    });\r",
+									"\r",
+									"</script>`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    var res = pm.response.json();\r",
+									"    \r",
+									"    var visualizerData = {\r",
+									"        \r",
+									"        // Labels take an array of strings\r",
+									"        labels: [],\r",
+									"        \r",
+									"        // Data takes an array of numbers\r",
+									"        data: []\r",
+									"    };\r",
+									"\r",
+									"    return {response: visualizerData};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2ODg1LCJleHAiOjE3NDYwMDQwODV9.WE9FTAjW0sTAJDhKArQ7OHkyUVditUuKKsrytUlwy58",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"Biryani rice\",\r\n  \"quantity\": 25.0,\r\n  \"price\": 90.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sellers",
+								"083f83b6-0087-4828-8ce1-10f3972b9837",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sellers",
+										"083f83b6-0087-4828-8ce1-10f3972b9837",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 07:18:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Seller – List Products",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<canvas id=\"myChart\" height=\"75\"></canvas>\r",
+									"\r",
+									"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> \r",
+									"\r",
+									"<script>\r",
+									"    var ctx = document.getElementById(\"myChart\");\r",
+									"\r",
+									"    var myChart = new Chart(ctx, {\r",
+									"        type: \"bar\",\r",
+									"        data: {\r",
+									"            labels: [],\r",
+									"            datasets: [{\r",
+									"                data: [],\r",
+									"                \r",
+									"                // Change these colours to customize the chart\r",
+									"                backgroundColor: [\"#003f5c\", \"#58508d\", \"#bc5090\", \"#ff6361\", \"#ffa600\"],\r",
+									"            }]\r",
+									"        },\r",
+									"        options: {\r",
+									"            legend: { display: false },\r",
+									"            title: {\r",
+									"                display: true,\r",
+									"                text: 'Count'\r",
+									"            },\r",
+									"            scales: {\r",
+									"                xAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Items'\r",
+									"                    }\r",
+									"                }],\r",
+									"                yAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Count'\r",
+									"                    }\r",
+									"                }]\r",
+									"            }\r",
+									"        }\r",
+									"\r",
+									"    });\r",
+									"\r",
+									"    // Access the data passed to pm.visualizer.set() from the JavaScript\r",
+									"    // code of the Visualizer template\r",
+									"    pm.getData(function (err, value) {\r",
+									"        myChart.data.datasets[0].data = value.response.data;\r",
+									"        myChart.data.labels = value.response.labels;\r",
+									"        myChart.update();\r",
+									"    });\r",
+									"\r",
+									"</script>`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    var res = pm.response.json();\r",
+									"    \r",
+									"    var visualizerData = {\r",
+									"        \r",
+									"        // Labels take an array of strings\r",
+									"        labels: [],\r",
+									"        \r",
+									"        // Data takes an array of numbers\r",
+									"        data: []\r",
+									"    };\r",
+									"\r",
+									"    return {response: visualizerData};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2ODg1LCJleHAiOjE3NDYwMDQwODV9.WE9FTAjW0sTAJDhKArQ7OHkyUVditUuKKsrytUlwy58",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sellers",
+								"083f83b6-0087-4828-8ce1-10f3972b9837",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Seller – List Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sellers",
+										"083f83b6-0087-4828-8ce1-10f3972b9837",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "162"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a2-wj6x07SeDMn2AfAkmSR9BmRN+Do\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 08:58:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\n        \"type\": \"Biryani rice\",\n        \"quantity\": \"25.00\",\n        \"price\": \"90.00\",\n        \"available\": false,\n        \"updated_at\": \"2025-04-30T08:57:10.246Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Seller – Update Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<canvas id=\"myChart\" height=\"75\"></canvas>\r",
+									"\r",
+									"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> \r",
+									"\r",
+									"<script>\r",
+									"    var ctx = document.getElementById(\"myChart\");\r",
+									"\r",
+									"    var myChart = new Chart(ctx, {\r",
+									"        type: \"bar\",\r",
+									"        data: {\r",
+									"            labels: [],\r",
+									"            datasets: [{\r",
+									"                data: [],\r",
+									"                \r",
+									"                // Change these colours to customize the chart\r",
+									"                backgroundColor: [\"#003f5c\", \"#58508d\", \"#bc5090\", \"#ff6361\", \"#ffa600\"],\r",
+									"            }]\r",
+									"        },\r",
+									"        options: {\r",
+									"            legend: { display: false },\r",
+									"            title: {\r",
+									"                display: true,\r",
+									"                text: 'Count'\r",
+									"            },\r",
+									"            scales: {\r",
+									"                xAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Items'\r",
+									"                    }\r",
+									"                }],\r",
+									"                yAxes: [{\r",
+									"                    display: true,\r",
+									"                    scaleLabel: {\r",
+									"                        display: true,\r",
+									"                        labelString: 'Count'\r",
+									"                    }\r",
+									"                }]\r",
+									"            }\r",
+									"        }\r",
+									"\r",
+									"    });\r",
+									"\r",
+									"    // Access the data passed to pm.visualizer.set() from the JavaScript\r",
+									"    // code of the Visualizer template\r",
+									"    pm.getData(function (err, value) {\r",
+									"        myChart.data.datasets[0].data = value.response.data;\r",
+									"        myChart.data.labels = value.response.labels;\r",
+									"        myChart.update();\r",
+									"    });\r",
+									"\r",
+									"</script>`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    var res = pm.response.json();\r",
+									"    \r",
+									"    var visualizerData = {\r",
+									"        \r",
+									"        // Labels take an array of strings\r",
+									"        labels: [],\r",
+									"        \r",
+									"        // Data takes an array of numbers\r",
+									"        data: []\r",
+									"    };\r",
+									"\r",
+									"    return {response: visualizerData};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNzZjYjg2ZC0wZjg4LTQ3MTctYjY0OC0yOTQ2ZDg0ZDEyNDQiLCJyb2xlIjoic2VsbGVyIiwiaWF0IjoxNzQ1OTk2ODg1LCJleHAiOjE3NDYwMDQwODV9.WE9FTAjW0sTAJDhKArQ7OHkyUVditUuKKsrytUlwy58",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sellers",
+								"083f83b6-0087-4828-8ce1-10f3972b9837",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Seller – Update Product",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"available\": true }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sellers/083f83b6-0087-4828-8ce1-10f3972b9837/products/f82a2cb3-1908-4c3d-8e7c-d5556d686088",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sellers",
+										"083f83b6-0087-4828-8ce1-10f3972b9837",
+										"products",
+										"f82a2cb3-1908-4c3d-8e7c-d5556d686088"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 09:03:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Buyer",
+			"item": [
+				{
+					"name": "Create a Buyer Account",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"name\": \"Chakradhar\",\r\n  \"phone\": \"3602511822\",\r\n  \"password\": \"chakradhar123\",\r\n  \"role\": \"buyer\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/register?Content-Type=application/json",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"register"
+									],
+									"query": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "287"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11f-4uiFJkltCe/L3CjmxdY7WLPi6wE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 09:44:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMDYyNzIsImV4cCI6MTc0NjAxMzQ3Mn0.ZmT4rpkg2zbeQAntHMC50QKl3pFgMd5yJK84SSKy5Mo\",\n    \"userId\": \"16c5ed0d-eb49-48e0-aa3b-379b67b4741e\",\n    \"role\": \"buyer\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login Buyer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phone\": \"3602511822\",\r\n  \"password\": \"chakradhar123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"phone\": \"3602511822\",\r\n  \"password\": \"chakradhar123\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-28JnPIP/lXwNOdinuESqzLWZ9Ns\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:22:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA\",\n    \"userId\": \"16c5ed0d-eb49-48e0-aa3b-379b67b4741e\",\n    \"name\": \"Chakradhar\",\n    \"role\": \"buyer\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Search Product",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "if availablity is no",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"name\": \"Chakradhar\",\r\n  \"phone\": \"3602511822\",\r\n  \"password\": \"chakradhar123\",\r\n  \"role\": \"buyer\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/register?Content-Type=application/json",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"register"
+									],
+									"query": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "287"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11f-4uiFJkltCe/L3CjmxdY7WLPi6wE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 09:44:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMDYyNzIsImV4cCI6MTc0NjAxMzQ3Mn0.ZmT4rpkg2zbeQAntHMC50QKl3pFgMd5yJK84SSKy5Mo\",\n    \"userId\": \"16c5ed0d-eb49-48e0-aa3b-379b67b4741e\",\n    \"role\": \"buyer\"\n}"
+						},
+						{
+							"name": "Search product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/products/search?type=Biryani rice&qty=10&lat=18.1&lng=78.8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"products",
+										"search"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "Biryani rice"
+										},
+										{
+											"key": "qty",
+											"value": "10"
+										},
+										{
+											"key": "lat",
+											"value": "18.1"
+										},
+										{
+											"key": "lng",
+											"value": "78.8"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b7-v3SaxztMVPphM0bHFyRwEZo6XJk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:43:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"productId\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\n        \"type\": \"Biryani rice\",\n        \"quantity\": \"25.00\",\n        \"priceWithCommission\": 94.5,\n        \"transportCost\": null,\n        \"sellerAnonName\": \"Khammam Rice Mill #1\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Place Bid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": \"<from_search>\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/bids",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bids"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "if no item",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"<from_search>\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16-HMBFYaTpZShPBUoDXa5yG4bzh1U\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:34:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Bid failed\"\n}"
+						},
+						{
+							"name": "place bid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-TmeYoyfAgH5oliXaRT2GDW7eRdg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:53:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bidId\": \"1ca7bcc6-3713-415e-8a86-20b40bfaab6d\",\n    \"status\": \"pending\"\n}"
+						},
+						{
+							"name": "if correct price",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\r\n  \"bidPrice\": 90\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-TMhZHX5vDMQVfBRz1rZZsHwEM9M\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:35:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bidId\": \"09171f4a-d3dd-49ec-8c25-46eb417d9d62\",\n    \"status\": \"accepted\",\n    \"orderId\": \"b0240be6-6e51-49e9-a024-18f836a90bad\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Place Bid Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": \"<from_search>\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/bids",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bids"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "if no item",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"<from_search>\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16-HMBFYaTpZShPBUoDXa5yG4bzh1U\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:34:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Bid failed\"\n}"
+						},
+						{
+							"name": "place bid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\r\n  \"bidPrice\": 55\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43-TmeYoyfAgH5oliXaRT2GDW7eRdg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:53:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bidId\": \"1ca7bcc6-3713-415e-8a86-20b40bfaab6d\",\n    \"status\": \"pending\"\n}"
+						},
+						{
+							"name": "if correct price",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"productId\": \"f82a2cb3-1908-4c3d-8e7c-d5556d686088\",\r\n  \"bidPrice\": 90\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/bids",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-TMhZHX5vDMQVfBRz1rZZsHwEM9M\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:35:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"bidId\": \"09171f4a-d3dd-49ec-8c25-46eb417d9d62\",\n    \"status\": \"accepted\",\n    \"orderId\": \"b0240be6-6e51-49e9-a024-18f836a90bad\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Ensure the Bid is Accepted",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/bids/1ca7bcc6-3713-415e-8a86-20b40bfaab6d/accept",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids",
+										"1ca7bcc6-3713-415e-8a86-20b40bfaab6d",
+										"accept"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-GsZZnDySaraKBqa48ZNRyqIlUaU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:34:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Bid price does not meet seller's minimum price\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Ensure the Bid is Accepted Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/bids/1ca7bcc6-3713-415e-8a86-20b40bfaab6d/accept",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"bids",
+										"1ca7bcc6-3713-415e-8a86-20b40bfaab6d",
+										"accept"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-GsZZnDySaraKBqa48ZNRyqIlUaU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:34:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Bid price does not meet seller's minimum price\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Buyer Orders",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/buyers/16c5ed0d-eb49-48e0-aa3b-379b67b4741e/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"buyers",
+								"16c5ed0d-eb49-48e0-aa3b-379b67b4741e",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "if bid not accepted(low price)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/buyers/16c5ed0d-eb49-48e0-aa3b-379b67b4741e/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"buyers",
+										"16c5ed0d-eb49-48e0-aa3b-379b67b4741e",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 13:33:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						},
+						{
+							"name": "Get Buyer Orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/buyers/16c5ed0d-eb49-48e0-aa3b-379b67b4741e/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"buyers",
+										"16c5ed0d-eb49-48e0-aa3b-379b67b4741e",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "207"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cf-7NNrAjxklYkbBpkBV6DKKwtwtjQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:41:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"orderId\": \"b0240be6-6e51-49e9-a024-18f836a90bad\",\n        \"sellerAnonName\": \"Khammam Rice Mill #?\",\n        \"productType\": \"Biryani rice\",\n        \"finalPrice\": \"90.00\",\n        \"paymentStatus\": \"pending\",\n        \"createdAt\": \"2025-04-30T14:35:07.976Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Mock Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/orders/{orderId}/pay",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orders",
+								"{orderId}",
+								"pay"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mock Payment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMTkzNTIsImV4cCI6MTc0NjAyNjU1Mn0.isnV_uxjddTOnbNL4yZ-gR1gURBVIBpcNlTuBSwA7ZA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3000/orders/b0240be6-6e51-49e9-a024-18f836a90bad/pay",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"orders",
+										"b0240be6-6e51-49e9-a024-18f836a90bad",
+										"pay"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-VdxfUQt/lWV+ckIPQUFbU5KjFOU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 14:42:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"paymentStatus\": \"paid\",\n    \"orderId\": \"b0240be6-6e51-49e9-a024-18f836a90bad\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Logistics",
+			"item": [
+				{
+					"name": "Logistics – Get Nearby Partners",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/logistics/nearby?lat=12.9796&lng=77.5966",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logistics",
+										"nearby"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "12.9796"
+										},
+										{
+											"key": "lng",
+											"value": "77.5966"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"68-IHB3C7uZuKeMqQxCUk8H0xvB7Y4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 15:13:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"partnerId\": \"b9008b1b-58ee-48e5-8002-3f8b520d6348\",\n        \"name\": \"FastTransport\",\n        \"distance\": 5.2599113794816\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Logistics – Assign Partner",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNmM1ZWQwZC1lYjQ5LTQ4ZTAtYWEzYi0zNzliNjdiNDc0MWUiLCJyb2xlIjoiYnV5ZXIiLCJpYXQiOjE3NDYwMzM4OTgsImV4cCI6MTc0NjA0MTA5OH0.30d1wT2vIRSyZgKnmsMylBOf96rm-_bTg4v-aTCKvzc",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"orderId\": \"c4a8cbc9-eaec-489b-9088-35666e0d1527\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/logistics/b9008b1b-58ee-48e5-8002-3f8b520d6348/assign",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logistics",
+										"b9008b1b-58ee-48e5-8002-3f8b520d6348",
+										"assign"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-AY39wYoJob1CiTuVsvrY9Pnc1/0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Apr 2025 17:30:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Logistics partner not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logistics – Partner Accepts Assignment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Logistics – Update Assignment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Logistics – Confirm Delivery",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
